@@ -1,6 +1,5 @@
-import math  # todo: rewrite exist test
+import math  
 import matplotlib.pyplot as plt
-import numpy as np
 import random
 
 
@@ -8,9 +7,8 @@ def check_if_exist(first_arr, second_arr, first_coord, second_coord):
     first_arr = list(first_arr)
     second_arr = list(second_arr)
     V = False
-    for i in range(0, len(first_arr)):
-        dist = math.sqrt((first_arr[i] - first_coord) ** 2 + (second_arr[i] - second_coord) ** 2)
-        if dist == 0:
+    for i in range(len(first_arr)):
+        if first_arr[i] == first_coord and second_arr[i] == second_coord:
             V = True
             break
     return V
@@ -43,13 +41,13 @@ def get_even_coord(start, stop):
     return num
 
 
-def set_coord(left_border, right_border, bottom_border, upper_border, quantity, axis):
+def set_coord(left_border, right_border, bottom_border, upper_border, quantity):
     quantity = int(quantity)
     left_border = int(left_border)
     right_border = int(right_border)
     upper_border = int(upper_border)
     bottom_border = int(bottom_border)
-    axis = str(axis)
+
     X = []
     Y = []
     x_1 = random.randint(left_border, right_border)
@@ -57,32 +55,27 @@ def set_coord(left_border, right_border, bottom_border, upper_border, quantity, 
     X.append(x_1)
     Y.append(y_1)
 
-    while check_if_fits(x_1, y_1) and check_if_exist(X, Y, X[0], Y[0]):
+    while check_if_fits(x_1, y_1) or check_if_exist(X, Y, x_1, y_1):
         x_1 = get_even_coord(left_border, right_border)
         y_1 = get_even_coord(bottom_border, upper_border)
     X[0] = x_1
     Y[0] = y_1
-    for i in range(quantity - 1):
+
+    for i in range(1, quantity - 1):
         x_c = get_even_coord(left_border, right_border)
         y_c = get_even_coord(bottom_border, upper_border)
-
-        while check_if_fits(x_c, y_c) and check_if_exist(X, Y, x_c, y_c):
+        while check_if_exist(X, Y, x_c, y_c) or check_if_fits(x_c, y_c):
             x_c = get_even_coord(left_border, right_border)
             y_c = get_even_coord(bottom_border, upper_border)
         X.append(x_c)
         Y.append(y_c)
 
-    if axis == "x":
-        return X
-    if axis == "y":
-        return Y
+    return [X, Y]
 
 
 def get_min_max_dist(X, Y):
     X = list(X)
     Y = list(Y)
-    print(X)
-    print(Y)
     max_dist = 0
     min_dist = math.sqrt((X[0] - X[1]) ** 2 + (Y[0] - Y[1]) ** 2)
     tmp = 0
@@ -93,17 +86,25 @@ def get_min_max_dist(X, Y):
                 if tmp > max_dist:
                     max_dist = tmp
                 if tmp <= min_dist:
-                    print(X[i], " ", Y[i], "  --  ", X[j], " ", Y[j], "   min = ", min_dist, " i j = ", i, " ", j)
                     min_dist = tmp
     print("Max dist = ", max_dist)
     print("Min dist = ", min_dist)
 
 
-#get_min_max_dist(set_coord(0, 50, 0, 50, 100, "x"), set_coord(0, 50, 0, 50, 100, "y"))
+# main
+coords_first = set_coord(0, 50, 0, 50, 100)
+coords_second = set_coord(-100, -50, -100, -50, 100)
+print("Min/Max distance for 1st area: ")
+get_min_max_dist(coords_first[0], coords_first[1])
+print("Min/Max distance for 2nd area: ")
+get_min_max_dist(coords_second[0], coords_second[1])
+#
+
+
 # output graph
 fig, ax = plt.subplots()
-plt.scatter(set_coord(0, 50, 0, 50, 100, "x"), set_coord(0, 50, 0, 50, 100, "y"))
-plt.scatter(set_coord(-100, -50, -100, -50, 100, "x"), set_coord(-100, -50, -100, -50, 100, "y"))
+plt.scatter(coords_first[0], coords_first[1])
+plt.scatter(coords_second[0], coords_second[1])
 
 ax.spines['left'].set_position('center')
 ax.spines['bottom'].set_position('center')
