@@ -1,4 +1,4 @@
-import math  
+import math
 import matplotlib.pyplot as plt
 import random
 
@@ -91,20 +91,72 @@ def get_min_max_dist(X, Y):
     print("Min dist = ", min_dist)
 
 
+def shift_by(arr, num):
+    arr = list(arr)
+    for i in range(len(arr)):
+        arr[i] -= num
+    return arr
+
+
+def count_common_points(x_first, y_first, x_second, y_second):
+    x_first = list(x_first)
+    y_first = list(y_first)
+    x_second = list(x_second)
+    y_second = list(y_second)
+    coords_x = []
+    coords_y = []
+    for i in range(len(x_first)):
+        if check_if_exist(x_first, y_first, x_second[i], y_second[i]):
+            coords_x.append(x_second[i])
+            coords_y.append(y_second[i])
+    print("Number of common dots = ", len(coords_x))
+    return [coords_x, coords_y]
+
+
+def shift_back(arr, num):
+    arr = list(arr)
+    for i in range(len(arr)):
+        arr[i] += num
+    return arr
+
+
+######
 # main
 coords_first = set_coord(0, 50, 0, 50, 100)
 coords_second = set_coord(-100, -50, -100, -50, 100)
-print("Min/Max distance for 1st area: ")
+
+print("Min/Max distance for 1st area : ")
 get_min_max_dist(coords_first[0], coords_first[1])
-print("Min/Max distance for 2nd area: ")
+print("\n")
+print("Min/Max distance for 2nd area : ")
 get_min_max_dist(coords_second[0], coords_second[1])
-#
+print("\n")
+
+shifted_x_first = shift_by(coords_first[0], 100)
+shifted_y_second = shift_by(coords_second[1], -100)
+common_coords = count_common_points(shifted_x_first, coords_first[1], coords_second[0], shifted_y_second)
+print("\n")
+common_x_in_first_area = shift_back(common_coords[0], 100)
+common_y_in_first_area = common_coords[1]
+
+common_x_in_second_area = common_coords[0]
+common_y_in_second_area = shift_back(common_coords[1], -100)
+
+print("Min/Max distance for common dots :")
+get_min_max_dist(common_x_in_first_area, common_y_in_first_area)
+print("\n")
+
+#####
 
 
 # output graph
 fig, ax = plt.subplots()
-plt.scatter(coords_first[0], coords_first[1])
-plt.scatter(coords_second[0], coords_second[1])
+plt.scatter(coords_first[0], coords_first[1], s=4, color="red")
+plt.scatter(coords_second[0], coords_second[1], s=4, color="blue")
+# plt.scatter(shifted_x_first, coords_first[1])
+# plt.scatter(coords_second[0], shifted_y_second)
+plt.scatter(common_x_in_first_area, common_y_in_first_area, s=4, color="black")
+plt.scatter(common_x_in_second_area, common_y_in_second_area, s=4, color="black")
 
 ax.spines['left'].set_position('center')
 ax.spines['bottom'].set_position('center')
@@ -115,4 +167,4 @@ ax.set_ylim(-110, 110)
 ax.set_xlim(-110, 110)
 ax.grid()
 plt.show()
-#
+##############
