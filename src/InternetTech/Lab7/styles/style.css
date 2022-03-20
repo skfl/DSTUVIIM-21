@@ -1,0 +1,21 @@
+html {
+    background-color:aliceblue;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url(../fonts/sfuidisplay_bold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.task1 {
+    position: absolute;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: black;
+    background: yellow;
+    font-family: 'SF UI Display';
+}

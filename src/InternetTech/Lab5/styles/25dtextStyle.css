@@ -1,0 +1,37 @@
+html {
+    background-color: white;
+    
+}
+@font-face {
+    font-family: 'SF UI Display';
+    src: url(../fonts/sfuidisplay_bold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+.text-1 {
+    color: #790604;
+    font-size: 100px;
+    margin-left: 500px;
+    margin-top: 305px;
+    font: optional;
+    font-family: 'SF UI Display';
+    position: absolute;
+}
+.text-2 {
+    color: #c0c0c0;
+    font-size: 100px;
+    margin-left: 501px;
+    margin-top: 306px;
+    font: optional;
+    font-family: 'SF UI Display';
+    position: absolute;
+}
+.text-3 {
+    color: red;
+    font-size: 100px;
+    margin-left: 502px;
+    margin-top: 307px;
+    font: optional;
+    font-family: 'SF UI Display';
+    position: absolute;
+}
