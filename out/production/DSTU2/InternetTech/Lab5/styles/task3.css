@@ -1,0 +1,55 @@
+html {
+    background-color: aliceblue;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url(../fonts/sfuidisplay_bold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.img-1 {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 250px;
+    font-family: 'SF UI Display';
+    font-size: 40px;
+    text-align: center;
+}
+
+.img-2 {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 1050px;
+    font-family: 'SF UI Display';
+    font-size: 40px;
+    text-align: center;
+    filter: invert();
+}
+
+.img-2-text {
+    text-shadow: 3px 3px 4px black;
+    font-family: 'SF UI Display';
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    margin-top: 650px;
+    margin-left: 1200px;
+}
+
+.img-3-text {
+    font-family: 'SF UI Display';
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    margin-top: 1500px;
+    margin-left: 750px; 
+}
+
+.img-3 {
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 600px;  
+    transform: rotate(180deg);
+}

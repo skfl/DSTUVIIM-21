@@ -10,7 +10,7 @@ def euclid_algo_ext(p, mod):
         x, xi = xi, x - xi * q
         y, yi = yi, y - yi * q
     if (x < 0):
-        return start + x + 1
+        return start + x
     return (x)
 
 
