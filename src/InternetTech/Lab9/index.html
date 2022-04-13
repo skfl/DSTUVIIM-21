@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC ”-//W3C//DTD HTML 4.0//EN”>
+<HTML>
+
+<HEAD>
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+<TITLE>
+Calc
+</TITLE>
+</HEAD>
+<BODY>
+
+ 
+
+    <form action="/output" method="post" name="form">
+    <div class="txt">
+    <input name="eqNum" size="23" class="txt1" readonly></input>
+    <input name="resultNum" size="22" value="Answer" class="txt3"></input>
+    </div>
+    </form>
+    <div class="buttons">
+    <button type="button" name="num0" class="line1" value="0" onclick="append(0)">0</button>
+    <button type="button" name="num1" class="line1" value="1" onclick="append(1)">1</button>
+    <button type="button" name="num2" class="line1" value="2" onclick="append(2)">2</button>
+    <button type="button" name="+" class="line1" value="+" onclick="appendOp(0)">+</button>
+    <button type="button" name="num3" class="line2" value="3" onclick="append(3)">3</button>
+    <button type="button" name="num4" class="line2" value="4" onclick="append(4)">4</button>
+    <button type="button" name="num5" class="line2" value="5" onclick="append(5)">5</button>
+    <button type="button" name="-" class="line2" value="-" onclick="appendOp(1)">-</button>
+    <button type="button" name="num6" class="line3" value="6" onclick="append(6)">6</button>
+    <button type="button" name="num7" class="line3" value="7" onclick="append(7)">7</button>
+    <button type="button" name="num8" class="line3" value="8" onclick="append(8)">8</button>
+    <button type="button" name="*" class="line3" value="*" onclick="appendOp(2)">*</button>
+    <button type="button" name="num9" class="line4"value="9" onclick="append(9)">9</button>
+    <button type="button" name="/" class="line4" value="/" onclick="appendOp(3)">/</button>
+    <button type="button" name="=" class="line4" value="/" onclick="getResult()">=</button>
+    <button type="button" name="cleanButton" class="line5" value="clear" onclick="appendOp(4)">C</button>
+    
+    <button type="button" name="ph2" class="line5" value="sqrt" onclick="getSqrt()">√</button>
+    <button type="button" name="ph3" class="line5" value="sin" onclick="getSin()">sin</button>
+    <button type="button" name="ph4" class="line5" value="cos" onclick="getCos()">cos</button>
+    </div>
+</BODY>
+<script src="scripts/calс.js"></script>
+</HTML>   

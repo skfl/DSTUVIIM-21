@@ -1,0 +1,21 @@
+html {
+    background-color: gray;
+}
+
+.task1 {
+
+width: 650px;
+height: 490px;
+}
+
+.img {
+    width: 640px;
+    height: 480px;
+}
+
+.img2 {
+    position: absolute;
+    left: 9px;
+    width: 640px;
+    height: 480px;
+}

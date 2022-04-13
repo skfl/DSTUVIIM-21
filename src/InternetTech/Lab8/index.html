@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC ”-//W3C//DTD HTML 4.0//EN”>
+<HTML>
+
+<HEAD>
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+
+<TITLE>
+Forms
+</TITLE>
+</HEAD>
+<BODY text="white">
+<div class="form" id="id1">    
+<form action="/output" method="post" name="form">
+    <ul>
+        
+        <li>
+            <label for="name">Enter username :</label>
+            <input type="text" id="name" name="user_user">
+        </li>
+
+        <li>
+            <label for="mail">Enter e-mail :</label>
+            <input type="text" id="mail" name="user_mail">
+        </li>
+        
+        <li>
+            <select name="select_gender">
+                <option disabled>Select your gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </li>
+              
+        <li>
+        <textarea name="textarea">Tell us about yourself</textarea>
+        </li>
+
+        <li>
+            Select your favorite language
+            <input type="radio" id="radChoise1" name="radio" value="js">
+            <label for="radChoise1">JS</label>
+            <input type="radio" id="radChoise2" name="radio" value="java">
+            <label for="radChoise1">Java</label>
+            <input type="radio" id="radChoise3" name="radio" value="c++">
+            <label for="radChoise1">c++</label>
+        </li>
+        <li class="chckbx">
+            I accept all <a href="https://naruto.fandom.com/ru/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0_%D0%A8%D0%B8%D0%BD%D0%BE%D0%B1%D0%B8" target="_blank">rules</a><input type="checkbox" name="checkbox">
+        </li>
+  
+        <li>
+            <button type="submit" id="submit">Send your information</button>
+        </li>
+    </ul>
+</form>
+</div>
+</BODY>
+<script src="scripts/task1.js"></script>
+</HTML>   

@@ -1,0 +1,87 @@
+html {
+    background-color: aqua;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url(../fonts/sfuidisplay_bold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'SF UI Display';
+    font-size: 25;
+}
+
+button {
+    background-color: gray;
+    transition-duration: 0.4s;
+    width: 81px;
+    height: 60px; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    font-size: 25px;
+    font-family: 'SF UI Display';
+  }
+
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.line1 {
+  display: inline ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.line2 {
+  display: inline ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.line3 {
+  display: inline ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.line4 {
+  display: inline ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.line5 {
+  display: inline ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  
+  width: 400px;
+  height: auto;
+}
+
+.txt {
+  display: block;
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin-top: -50px;
+  margin-left: 750px;
+}

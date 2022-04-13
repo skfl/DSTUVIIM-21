@@ -1,0 +1,29 @@
+html {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url(../fonts/sfuidisplay_bold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'SF UI Display';
+    font-size: 25;
+}
+
+li {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.form {
+    margin-top: 190px;
+    margin-left: 38%;
+}
+
+.chckbx{
+    font-size: 15;
+}

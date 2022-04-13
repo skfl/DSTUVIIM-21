@@ -4,7 +4,7 @@ using namespace std;
  const int n = 11;
 
  int B[n]={100,7,5,4,6,-999,1,22,4,9,2};
- int testArray[5] = {1,2,-1,4,0};
+ int testArray[7] = {1,2,-1,4,0,2,6};
  
  int findMinFromEdges(int *arr,int size,int num){
      int min = arr[0];
