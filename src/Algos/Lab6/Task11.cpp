@@ -3,7 +3,7 @@
 using namespace std;
 
 int getMin(int a,int b){
-    cout<<1;
+    
     if(a<b || a==b){
         return a;
     }else{
@@ -13,7 +13,7 @@ int getMin(int a,int b){
 
 
 double getMin(double a,double b){
-    cout<<2;
+    
     if(a<b || a==b){
         return a;
     }else{
@@ -23,7 +23,7 @@ double getMin(double a,double b){
 
 
 float getMin(float a,float b){
-    cout<<3;
+    
     if(a<b || a==b){
         return a;
     }else{

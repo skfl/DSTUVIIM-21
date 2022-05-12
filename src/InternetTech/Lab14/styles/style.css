@@ -1,0 +1,35 @@
+html {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url(../fonts/sfuidisplay_bold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'SF UI Display';
+    color: white;
+    font-size: 25px;
+    margin-left: 5%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+img#ghost1{
+    position: absolute;
+}
+
+img#ghost2{
+    top:300px;
+    position: absolute;
+}
+

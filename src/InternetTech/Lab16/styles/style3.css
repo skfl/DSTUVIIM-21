@@ -1,0 +1,21 @@
+html {
+    background-color: blueviolet;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url(../fonts/sfuidisplay_bold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-size: 60px;
+    color: white;
+}
+
+.txt{
+    margin-left: 700px;
+    margin-top: 300px;
+    font-family: 'SF UI Display';
+}

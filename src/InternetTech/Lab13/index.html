@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC ”-//W3C//DTD HTML 4.0//EN”>
+<HTML id="html">
+<HEAD>
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+<TITLE>
+Filter
+</TITLE>
+</HEAD>
+<BODY>
+    <div class="task1">
+        <img src="../Data/itachi.jpg" alt="" id="img">
+        <p>Выберите фильтр : </p>
+        <form action="" name="form">
+            <input type="radio" id="radChoise1" name="radio" value="1">
+            <label for="radChoise1">Повернуть на угол</label>
+            <input type="radio" id="radChoise2" name="radio" value="2">
+            <label for="radChoise2">Отражение</label>
+            <input type="radio" id="radChoise3" name="radio" value="3">
+            <label for="radChoise3">Прозрачность</label>
+            <input type="radio" id="radChoise4" name="radio" value="4">
+            <label for="radChoise4">Увеличение</label>
+        </form>
+        <img src="../Data/itachi.jpg" alt="" id="img2">
+        <br>
+        <br>    
+        <select id="select">
+            <option value="1">Оригинал</option>
+            <option value="2">700 на 700</option>
+            <option value="3">640 на 480</option>
+            <option value="4">10 на 15</option>
+          </select>
+          <br>
+          <br> 
+          <img src="../Data/itachi.jpg" alt="" id="img3" onclick="regClick()">
+    </div>
+
+</BODY>
+
+<script src="scripts/task1.js"></script>   
+</HTML>

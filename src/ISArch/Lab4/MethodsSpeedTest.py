@@ -51,26 +51,26 @@ start_time_split_lib = time.time_ns()
 for i in range(1, 1000000):
     lib_split_time(C)
 duration_time_split_lib = time.time_ns() - start_time_split_lib;
-
+print(lib_split_time(C))
 start_time_split_algo = time.time_ns()
 for i in range(1, 1000000):
     split_time(C)
 duration_time_split_algo = time.time_ns() - start_time_split_algo
-
+print(split_time(C))
 print("Split algo duration ", duration_time_split_algo / 1000000000, " Split lib duration ",
       duration_time_split_lib / 1000000000, " difference : ",
       (duration_time_split_algo - duration_time_split_lib) / 1000000000)
 
 start_time_endswith_lib = time.time_ns()
 for i in range(1, 1000000):
-    lib_endswith_time(C,"66")
+    lib_endswith_time(C, "66")
 duration_time_endswith_lib = time.time_ns() - start_time_endswith_lib
-
+print(lib_endswith_time(C, "66"))
 start_time_endswith_algo = time.time_ns()
 for i in range(1, 1000000):
-    endswith_time(C,"66")
+    endswith_time(C, "66")
 duration_time_endswith_algo = time.time_ns() - start_time_endswith_algo
-
+print(endswith_time(C, "66"))
 print("Endswith algo duration ", duration_time_endswith_algo / 1000000000, " Endswith lib duration ",
       duration_time_endswith_lib / 1000000000, " difference : ",
       (duration_time_endswith_algo - duration_time_endswith_lib) / 1000000000)
