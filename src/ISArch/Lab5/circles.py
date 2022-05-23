@@ -16,6 +16,7 @@ ax.spines['right'].set_visible(False)
 ax.set_ylim(0, m)
 ax.set_xlim(0, n)
 ax.grid()
+ax.set_aspect(1)
 
 
 def draw_circle(x, y, rad, color):
@@ -154,6 +155,6 @@ for i in range(len(a[0])):
 print(max1, " - biggest square of intersection")
 print(max2, " - second biggest square of intersection")
 ax.hlines(max_index[0], max_index[1], max_index[2], color="yellow")
-ax.hlines(max_index[3], max_index[4], max_index[5], color="yellow")
+ax.hlines(max_index[3], max_index[4], max_index[5], color="red")
 print("There are ", f, " intersections")
 plt.show()

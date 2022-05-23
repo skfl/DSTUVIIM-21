@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Какая из следующих функций преобразует строку в список в Python?",
+    "answers": [
+      "tuple(mystring)",
+      "list(mystring)",
+      "repr(mystring)",
+      "eval(mystring)"
+    ],
+    "right_answer": 2
+  },
+  {
+    "question": "Какая из следующих функций преобразует одиночный символ в его целочисленный эквивалент в Python?",
+    "answers": [
+      "hex(x)",
+      "unichr(x)",
+      "ord(x)",
+      "oct(x)"
+    ],
+    "right_answer": 2
+  },
+  {
+    "question": "Какое из перечисленных значений может возвращать функция random.randint (4)?",
+    "answers": [
+      "3,4",
+      "4",
+      "error",
+      "Ни один из вышеперечисленных"
+    ],
+    "right_answer": 3
+  },
+  {
+    "question": "Какой из следующих операторов в Python оценивается как истина, если он не находит переменную в указанной последовательности, и ложь в противном случае?",
+    "answers": [
+      "not in",
+      "is",
+      "//",
+      "**"
+    ],
+    "right_answer":1
+  },
+  {
+    "question": "Какая из следующих функций используется для проверки, все ли символы в строке находятся в нижнем регистре?",
+    "answers": [
+      "istitle()",
+      "isspace()",
+      "isnumeric()",
+      "islower()"
+    ],
+    "right_answer":4
+  },
+  {
+    "question": "Какая из следующих функций используется для проверки, все ли символы в строке являются десятичными?",
+    "answers": [
+      "title()",
+      "swapcase()",
+      "isdecimal()",
+      "upper()"
+    ],
+    "right_answer":3
+  },
+  {
+    "question": "Какая из следующих переменных среды для Python является альтернативным путем поиска модуля?",
+    "answers": [
+      "PYTHONCASEOK",
+      "PYTHONHOME",
+      "PYTHONPATH",
+      "PYTHONSTARTUP"
+    ],
+    "right_answer":3
+  },
+  {
+    "question": "Какая из следующих функций преобразует объект в строку в Python?",
+    "answers": [
+      "float(x)",
+      "str(x)",
+      "int(x,[,base])",
+      "long(x,[,base])"
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "Какой оператор осуществляет деление без остатка (возвращает целочисленное значение)?",
+    "answers": [
+      "%",
+      "//",
+      "/",
+      "Ни один из вышеперечисленных"
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "Что из перечисленного является недопустимой переменной?",
+    "answers": [
+      "_",
+      "foo",
+      "my_str_1",
+      "1st_str"
+    ],
+    "right_answer":4
+  },
+  {
+    "question": "Что из следующего не является ключевым словом?",
+    "answers": [
+      "assert",
+      "pass",
+      "eval",
+      "nonlocal"
+    ],
+    "right_answer":4
+  },
+  {
+    "question": "Какой ответ выдаст выражение 22 % 3",
+    "answers": [
+      "5",
+      "0",
+      "1",
+      "7"
+    ],
+    "right_answer":3
+  },
+  {
+    "question": "Что возвращает int(math.pow(3, 2)) ?",
+    "answers": [
+      "error, third argument required",
+      "error, too many arguments",
+      "6",
+      "9"
+    ],
+    "right_answer":4
+  },
+  {
+    "question": "Каково значение x, если x = math.sqrt(4) ?",
+    "answers": [
+      "2.0",
+      "2",
+      "(2.0,-2.0)",
+      "Ничего из вышеперечисленного"
+    ],
+    "right_answer":1
+  },
+  {
+    "question": "Что из перечисленного является кортежем Python?",
+    "answers": [
+      "{1, 2, 3}",
+      "(1, 2, 3)",
+      "[1, 2, 3]",
+      "{}"
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "Какой результат выражения 3*1**3",
+    "answers": [
+      "1",
+      "3",
+      "9",
+      "27"
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "Что из следующего не может быть переменной?",
+    "answers": [
+      "__init__",
+      "it",
+      "on",
+      "in"
+    ],
+    "right_answer":4
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  },
+  {
+    "question": "",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "right_answer":2
+  }
+]

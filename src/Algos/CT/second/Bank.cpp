@@ -11,7 +11,6 @@ struct Coins{
         }
 
         Coins()=default;
-
         void setValue(int vl){
             if(vl > 0){
                 value = vl;
@@ -48,7 +47,6 @@ class BankCC{
     private:
         Coins s[15];
         int top;
-        friend class Citizen;
     public:
 
         BankCC(){
@@ -142,7 +140,6 @@ class Citizen{
     
     private:
         std::string name;
-        friend class BankCC;
     protected:
         int bankroll;
     public:
@@ -192,7 +189,7 @@ class Counterfeiter : public Citizen{
     public:
         Counterfeiter(std::string nm):Citizen(nm){
         }
-
+        
         void pull(Coins coin,BankCC * bank){
             if(coin.getDiameter() < 1.25){
                 cout<<"Counterfeiters can only pull fake money"<<endl;
@@ -319,4 +316,6 @@ int main(){
     human4.grabAllMoney(bankCC);
     bankCC->showStack();
     findMinMaxBankroll(list,5);
+
+    return 0;
 }
