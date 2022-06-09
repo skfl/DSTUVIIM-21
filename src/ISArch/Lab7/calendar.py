@@ -153,6 +153,7 @@ def task2(n):
 def task3(m1, m2, a, b, g):
     print_month_new(g, m1, m2, a, b)
 
-# task1(10)
+
+print_month(2024,2)
 # task2(4)
 # task3(2, 7, 10, 22, 2020)

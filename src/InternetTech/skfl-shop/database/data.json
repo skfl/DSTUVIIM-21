@@ -1,0 +1,32 @@
+{
+  "id1": {
+    "name": "AK-47 Leet Museo",
+    "price": 1000,
+    "img": "leet_museo.png",
+    "desc": "Weird set of pics"
+  },
+  "id2": {
+    "name": "AK-47 Vulcano",
+    "price": 1500,
+    "img": "vulcano.png",
+    "desc": "E-sports classic"
+  },
+  "id3": {
+    "name": "AK-47 Wild Lotos",
+    "price": 6000,
+    "img": "wild_lotos.png",
+    "desc": "Something very expensive"
+  },
+  "id4": {
+    "name": "AK-47 Wasteland Rebel",
+    "price": 3000,
+    "img": "wasteland_rebel.png",
+    "desc": "Operation vanguard"
+  },
+  "id5": {
+    "name": "AK-47 Asiimov",
+    "price": 2500,
+    "img": "asiimov.png",
+    "desc": "dream"
+  }
+}
