@@ -151,12 +151,16 @@ html {
     border: 2px solid;
     border-radius: 10px;
     border-color: blueviolet;
-    box-shadow: 0 0 7px 3px blueviolet;
     margin: 10px 10px 10px 10px;
     text-align: center;
     color: white;
     font-size: 17px;
     font-family: 'SF UI Display';
+    transition: box-shadow .2s;
+}
+
+.data:hover{
+    box-shadow: 0 0 7px 3px blueviolet;
 }
 
 .btn {
@@ -197,7 +201,6 @@ html {
     margin-left: 155px;
     border-radius: 10px;
     border-color: blueviolet;
-    box-shadow: 0 0 7px 3px blueviolet; 
     color: white;  
 }
 
